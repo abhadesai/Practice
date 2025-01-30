@@ -26,6 +26,16 @@ class Solution:
 
         #optimal solution
 
+        slow, fast = head, head
+
+        #this check ensures fast ptr will never point to a null if cycle exists. End of list.
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+        return False
+
         
 
 
