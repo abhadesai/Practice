@@ -4,6 +4,7 @@ def listPractice(nums: list[int]) -> bool:
 
     nums = [0] * 5          #List with 5 zeroes.
     nums = [0] * len(nums)  #List with same length as nums
+    [[] for i in range(len(nums) + 1)]  # CHECK THIS!!!!
 
         ##List Comprehension##
 
@@ -22,7 +23,7 @@ def listPractice(nums: list[int]) -> bool:
 
     nums.reverse()
     nums.sort
-    
+
 
 
     
