@@ -4,13 +4,13 @@ def listPractice(nums: list[int]) -> bool:
 
     nums = [0] * 5          #List with 5 zeroes.
     nums = [0] * len(nums)  #List with same length as nums
-    [[] for i in range(len(nums) + 1)]  # CHECK THIS!!!!
+    [[] for i in range(len(nums) + 1)]  # Creates a list of empty lists with len(nums) + 1 elements.
 
-        ##List Comprehension##
+    ##List Comprehension##
 
     nums = [x * 2 for x in range(5)]    # [0,2,4,6,8]. Gives a list with some condition
     
-        ##Append##
+    ##Append##
     nums = []
     nums.append(1)      # when adding elements dynamically. may not be used much
 
